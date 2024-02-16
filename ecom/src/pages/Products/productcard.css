@@ -1,0 +1,100 @@
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distributes items evenly along the main-axis */
+}
+
+.product-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    width: calc(33% - 1rem); /* 25% width for each card with a small space between them */
+    margin-bottom: 1rem; /* Space between rows */
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px 0px rgba(0, 64, 128, 0.1);
+}
+
+.product-card__image {
+    max-width: 80%;
+    height: 70%;
+    padding-top: 2px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.product-card__description,
+.product-card__price,
+.product-card__brand {
+    margin: 0.2rem 0;
+    font-size: 1rem;
+}
+
+.product-card__brand {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.product-card__description {
+    font-weight: bold;
+}
+
+.product-card__price {
+    font-weight: bold;
+}
+
+
+.product-card__quantity-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.product-card__quantity-controls button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.product-card__quantity {
+    font-size: 1rem;
+    margin: 0 10px;
+}
+
+.btn {
+    font-size: 1.2rem;
+    margin-top: 5px;margin-bottom: 10px;
+    padding: 1rem 2.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: rgb(14, 14, 26);
+    color: rgb(234, 234, 234);
+    font-weight: 700;
+    transition: 0.6s;
+   
+  
+  }
+  
+  .btn:active {
+    scale: 0.92;
+  }
+  
+  .btn:hover {
+    background: rgb(2,29,78);
+    background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+    color: rgb(4, 4, 38);
+  }
+
+  
